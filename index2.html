@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>Using the XMLHttpRequest Object</h2>
-<div id="demo">
-<button type="button" onclick="loadXMLDoc()">Get Content</button> </div>
-
+<h2>SOP example 2</h2>
+<iframe id="telenet" src="https://www.telenet.be"></iframe>
+<script>
+window.onload = function() {
+setTimeout(function(){ document.getElementById('telenet').contentWindow.innerHTML;
+},5000)
+};
+</script>
 </body>
 </html>
